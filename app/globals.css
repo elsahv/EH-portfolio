@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html{
+    font-family: 'Cormorant Garamond', serif;
+    /* color: #35373d; */
+ }
+ 
+h2 {
+  color: #000;
+  /* text-decoration: underline; */
+}
+h3 {
+  color: #000
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+/* //*CONTACT FORM */
+#form-label {
+    padding:  2px;
+    margin-top: 20px;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  
+  /* //*FORM INPUT STYLES */
+  .form-input {
+    border: 2px solid #000;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 1px 5px 5px;
+  }
+  
+  
+  
+  ._textShadow{
+   text-shadow: 1px 1px 1px #007ba5;
+  }
+  
+  #message {
+    height: 150px;
+  }
+  
+  .error-msg {
+    color: coral;
+  }
+  
+  /* //*end FORM INPUT STYLES */
+ 

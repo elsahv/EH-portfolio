@@ -1,6 +1,6 @@
 import Temp1 from "../../../../public/screenshots/designs/-2-15-23.png";
 import Temp2 from "../../../../public/screenshots/designs/-creative-projects.png";
-import Temp3 from "../../../../public/screenshots/designs/-frontpage.png";
+import Temp3 from "../../../../public/screenshots/designs/blog-right-sidebar.png";
 import Temp4 from "../../../../public/screenshots/designs/-hero.png";
 import Temp5 from "../../../../public/screenshots/designs/-jungle-screenshot4.png";
 import Temp6 from "../../../../public/screenshots/designs/-writingtobetterhealth.png";
@@ -37,7 +37,7 @@ const GalleryContent = [
   },
   // {
   //   id: 4,
-  //   title: "Business Hero Demo",
+  //   title: "Business Hero Demo!",
   //   image: Temp4,
   //   paragraph1: "- view website for small business, located in Redlands CA.",
   //   url: "https://hoveyroofing.com",

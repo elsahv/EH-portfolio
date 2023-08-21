@@ -19,7 +19,7 @@ const Grid = () => {
           {/* //todo: ADD ZOOM IN TITLE FEATURE, FOR MOBILE- ABSOLUTE BOTTOM VISIBLE */}
           {content.map((item, index) => (
             <div
-              className="hover:border border-aquamarine hover:opacity-50 md:p-2 p-1"
+              className="hover:border border-onyx hover:opacity-50 md:p-2 p-1"
               key={index}
             >
               <a href={item.url} target="_blank" rel="noreferrer">

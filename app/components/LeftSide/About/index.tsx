@@ -13,9 +13,9 @@ const Work = () => {
         </div>
 
         <h2 className="text-4xl font-bold md:pt-0 pt-[150px]">About</h2>
-        <p className="text-lg lg:mb-[40px] mb-1 lg:ml-2 ml-1 lg:pt-2.5 pt-0">
+        {/* <p className="text-lg lg:mb-[40px] mb-1 lg:ml-2 ml-1 lg:pt-2.5 pt-0">
           -how it works!
-        </p>
+        </p> */}
       </div>
       <div className="text-black text-lg mb-[50px]">
         <p className="">

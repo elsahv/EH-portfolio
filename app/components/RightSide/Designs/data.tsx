@@ -6,7 +6,7 @@ import Temp5 from "../../../../public/screenshots/designs/-jungle-screenshot4.pn
 import Temp6 from "../../../../public/screenshots/designs/-writingtobetterhealth.png";
 import Temp7 from "../../../../public/screenshots/eh.png";
 import Temp8 from "../../../../public/screenshots/designs/double-panel.png";
-import Temp9 from "../../../../public/screenshots/hoveyroofing.png";
+import Temp9 from "../../../../public/screenshots/designs/fish-expo-demo.png";
 import Temp10 from "../../../../public/screenshots/jungle.png";
 
 //  while social media is great, you do not fully own your own content. These can disappear
@@ -74,17 +74,17 @@ const GalleryContent = [
   },
   {
     id: 9,
-    title: "Full Screen Hero",
+    title: "Fish expo example",
     image: Temp9,
     paragraph1: "- view website for small business, located in Redlands CA.",
-    url: "https://full-page-hero-demo.vercel.app/",
+    url: "https://lc-fish-expo-demo.vercel.app/",
   },
     {
     id: 10,
     title: "Smooth Scroll Hero",
     image: Temp10,
     paragraph1: "- view website for small business, located in Redlands CA.",
-    url: "https://lc-smooth-scroll-demo.vercel.app/",
+    url: "https://template-left-nav-journal-layout-1.vercel.app/",
   },
 ];
 

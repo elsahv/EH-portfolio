@@ -19,13 +19,6 @@ const index = () => {
           </div>
         </div>
       </div>    
-
-      {/* MOBILE SECTIONS */}
-      {/* <div className="md:hidden block px-5">
-       <About />
-        <ServicesInfo />
-        <Contact />  
-      </div> */}
     </section>
   );
 };

@@ -1,4 +1,3 @@
-import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -26,7 +25,7 @@ const Contact = () => {
 
         {/* //*RIGHT SIDE */}
         <section className="">
-          <ContactForm />
+          {/* <ContactForm /> */}
         </section>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Header = () => {
             <h1 className="text-black 2xl:text-[105px] md:text-6xl text-5xl py-5">
               Laughing Coyote Dev
             </h1>
-          <div className="flex flex-col border-black border-y-2 pl-5 text-2xl py-5 mr-5 l text-onyx justify-start">
+            <div className="flex flex-col border-black border-y-2 pl-5 text-2xl py-5 mr-5 l text-onyx justify-start">
               <Link href="/#about-section">About</Link>
               <Link href="/#services-section">Services</Link>
               <Link href="/#contact-section">Contact</Link>

@@ -14,7 +14,7 @@ const LeftSide = () => {
        src={Self}
        alt=""
       /> 
-          <span className="text-lg font-bold flex items-end lg:pt-2 pl-5 h-full">Hi there, {"I'm"} Elsa. <br />{"I'm"} a web developer based in Joshua Tree, CA.</span>
+          <span className="text-lg font-bold flex items-end lg:pt-2 pt-4 pl-5 h-full">Hi there, {"I'm"} Elsa. <br />{"I'm"} a web developer based in Joshua Tree, CA.</span>
         </div>
 
         <div className="grid 2xl:grid-cols-2 grid-cols-1">

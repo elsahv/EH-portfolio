@@ -3,6 +3,7 @@
 import Screenshot1 from "../../../../public/screenshots/rq.png";
 import Screenshot2 from "../../../../public/screenshots/roof.png";
 import Screenshot3 from "../../../../public/screenshots/lc.png";
+import Screenshot4 from "../../../../public/screenshots/wtbh.png";
  
 
 
@@ -25,7 +26,14 @@ export const websites = [
     title: "The Running Quail",     
     description:
     "A future Morongo Basin Community.",
-    url: "https://writingtobetterhealth.com",
+    url: "https://therunningquail.com",
      img: Screenshot3,
+  },
+  {
+    title: "Writing to Better Health",     
+    description:
+    "A future blog regarding nutrition and mental wellness.",
+    url: "https://writingtobetterhealth.com",
+     img: Screenshot4,
   },
 ];

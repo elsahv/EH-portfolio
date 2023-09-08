@@ -6,7 +6,7 @@ const Clients = () => {
   return (
     <div id="gallery" className="pt-5 pb-[100px]">
       <div className="flex flex-col  pb-[150px]">
-        <h2 className="pt-[180px] font-bold text-3xl text-left text-onyx h-[100%] pb-[50px] pl-5">
+        <h2 className="lg:pt-[180px] pt-1 font-bold text-3xl text-left text-onyx h-[100%] pb-[50px] pl-5">
           - Featured Websites -
         </h2>
         <div className="md:px-3 px-1 flex flex-col gap-1">

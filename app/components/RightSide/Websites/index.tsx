@@ -6,9 +6,10 @@ const Clients = () => {
   return (
     <div id="gallery" className="pt-5 pb-[100px]">
       <div className="flex flex-col pb-5">
-        <h2 className="lg:pt-[180px] pt-1 font-bold text-3xl text-left text-onyx h-[100%] pb-[50px] pl-5">
-          - Featured Websites -
-        </h2>
+        <div className="lg:pt-[180px] pt-1 h-[100%] pb-[50px] pl-5 text-onyx">
+          <h2 className='font-bold text-3xl text-left'>- Featured Websites -</h2>
+          <span className="pl-5">(all sites are currently in progress, and improving everyday!)</span>
+        </div>
         <div className="md:px-3 px-1 flex flex-col gap-1">
           {websites.map((item, index) => (
             <div className="lg:px-5 px-1 hover:opacity-50" key={index}>

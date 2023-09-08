@@ -1,24 +1,11 @@
-import Tagline from "../Tagline";
-import Designs from "./Designs";
-import Clients from "./Clients";
-import Link from "next/link";
+import Websites from "./Websites";
 
 const RightSide = () => {
   return (
-    <section
+    <section className="h-screen bg-munsell md:absolute relative right-0 lg:w-3/5 w-full overflow-y-scroll overflow-x-hidden p-5"
       id="right-side"
-      className="h-screen bg-onyx md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden p-5"
     >
-      <div className="md:mt-[150px] mt-2 2xl:w-3/4 w-full mx-5 px-5">
-        <div className="md:block hidden text-parchment">
-          <Tagline />
-        </div>
-      </div>
-     <Clients />
-       <Designs />
-       <Link href="/#contact-section">
-      Contact CTA
-      </Link>
+     <Websites />
     </section>
   );
 };

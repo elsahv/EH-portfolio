@@ -1,23 +1,21 @@
 
 const Contact = () => {
   return (
-    <div id="contact-section">
-      <div id="contact" className="h-screen">
+      <div id="contact" className="lg:h-screen h-[100%]">
         {/* //*LEFT SIDE */}
 
         <section className="pt-[100px]">
-          <h2 className="text-3xl text-onyx">Contact</h2>
+          <h2 className="text-3xl text-onyx ml-5">Contact</h2>
           <div className="text-onyx">
             <p className="text-lg">
               Has my portfolio piqued your interest? If so, you can contact me
               at
-              <a
-                className="underline pl-2"
-                href="mailto:devdesignsbyelsa@gmail.com"
+              <a className="underline px-2"
+                href="mailto:elsahvy@gmail.com"
               >
-                devdesignsbyelsa@gmail.com
+               elsahvy@gmail.com.
               </a>
-              , or simply fill out the form on the right. Looking forward to
+             Looking forward to
               hearing from you!
             </p>
           </div>
@@ -28,7 +26,6 @@ const Contact = () => {
           {/* <ContactForm /> */}
         </section>
       </div>
-    </div>
   );
 };
 

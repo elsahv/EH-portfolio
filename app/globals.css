@@ -15,6 +15,10 @@ h3 {
   color: #000
 }
 
+p {
+  padding: 25px;
+}
+
 
 /* //*CONTACT FORM */
 #form-label {

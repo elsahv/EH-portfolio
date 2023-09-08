@@ -2,12 +2,13 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import ClientOnly from './components/ClientOnly'
+import Header from './components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Laughing Coyote Dev',
-  description: 'Web design for small businesses and creatives',
+  title: 'Elsa Hovey | Portfolio',
+  description: '',
 }
 
 export default function RootLayout({
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Header />
       <ClientOnly>
         {children}
         </ClientOnly>

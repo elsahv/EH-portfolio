@@ -22,13 +22,13 @@ export const websites = [
     url: "https://hoveyroofing.com",
      img: Screenshot2,
   },
-  {
-    title: "The Running Quail",     
-    description:
-    "A future Morongo Basin Community.",
-    url: "https://therunningquail.com",
-     img: Screenshot3,
-  },
+  // {
+  //   title: "The Running Quail",     
+  //   description:
+  //   "A future Morongo Basin Community.",
+  //   url: "https://therunningquail.com",
+  //    img: Screenshot3,
+  // },
   {
     title: "Writing to Better Health",     
     description:

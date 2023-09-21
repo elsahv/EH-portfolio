@@ -10,3 +10,10 @@ DESIGN DEMOS
 8. Double Panel Layout Demo---- IP
 9. Full Screen Hero Demo
 10. Scroll By Sections Demo----
+
+- TODO NOW:
+- contact form comp
+
+- TODO LATER:
+- animations
+- imp Sanity

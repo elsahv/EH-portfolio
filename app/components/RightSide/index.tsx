@@ -6,6 +6,8 @@ const RightSide = () => {
       id="right-side"
     >
      <Websites />
+
+     {/* //todo- ADD BLOG FEATURE */}
     </section>
   );
 };

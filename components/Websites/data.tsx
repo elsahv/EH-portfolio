@@ -1,9 +1,9 @@
  
 
-import Screenshot1 from "../../../../public/screenshots/lc.png";
-import Screenshot2 from "../../../../public/screenshots/roof.png";
-import Screenshot3 from "../../../../public/screenshots/rq.png";
-import Screenshot4 from "../../../../public/screenshots/wtbh.png";
+import Screenshot1 from "../../public/screenshots/lc.png";
+import Screenshot2 from "../../public/screenshots/roof.png";
+import Screenshot3 from "../../public/screenshots/rq.png";
+import Screenshot4 from "../../public/screenshots/wtbh.png";
  
 
 

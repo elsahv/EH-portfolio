@@ -2,7 +2,7 @@ import Image from "next/image";
 import {websites} from "./data";
 import { MdFileOpen } from "react-icons/md";
 
-const Clients = () => {
+const Websites = () => {
   return (
     <div id="gallery" className="pt-5 pb-[100px]">
       <div className="flex flex-col pb-5">
@@ -37,4 +37,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default Websites;

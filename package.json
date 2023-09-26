@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@portabletext/react": "^3.0.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.16.7",
     "@types/node": "20.5.0",

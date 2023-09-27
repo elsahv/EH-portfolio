@@ -1,3 +1,4 @@
+import Card from "@/components/Card"
 import { getProject } from "@/sanity/sanity-utils"
 import { PortableText} from "@portabletext/react"
 import Image from "next/image"
@@ -11,7 +12,8 @@ export default async function Project({params}: Props) {
     const project = await getProject(slug)
 
     return<div>
-        <div className="flex justify-around px-[200px] bg-gray-300 drop-shadow-lg">
+        <Card />
+        <div className="flex justify-around px-[200px] bg-munsell drop-shadow-lg">
         <div className="flex justify-center items-center flex-col p-5">
             <h1 className="capitalize text-4xl">{project.name}</h1>
             <span className="pt-2">description goes here</span>
@@ -26,6 +28,7 @@ export default async function Project({params}: Props) {
 
 
 </div>
+
 <div className="flex justify-center">
 
 <article className="w-1/2 py-4">

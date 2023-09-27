@@ -1,29 +1,18 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
 
 
-interface Props {
-    id: string;
-    title: string;
-    image: string;
-}
-
-
-const Card = async ({id, title, image}: Props) => {
+export default async function Card() {
 
 
   return (
+    <div className="bg-test1">
     <div>
-        <h2>{title}</h2>
-            <Image
-             src={image}
-             alt={title}
-             width={450}
-             height={400}
-             className="border border-black"
-           />
+         post title
+    </div>
+    
+    <div>
+         post img lorem1000
+           </div>
     </div>
   )
 }
-
-export default Card

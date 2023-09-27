@@ -3,6 +3,7 @@ import Websites from "../components/Websites";
 import Image from 'next/image'
 import {getProjects} from "@/sanity/sanity-utils"
 import Link from 'next/link' 
+import Card from "@/components/Card";
  
 export default async function Home() {
 
@@ -16,11 +17,18 @@ export default async function Home() {
       <section className="lg:h-screen md:w-[100%] bg-munsell md:absolute relative right-0 lg:w-3/5 w-full lg:overflow-y-scroll overflow-x-hidden p-5"id="right-side">
         <Websites />
         <>
+
+        {/* //todo: CREATE DYNAMIC CARD COMP v*/}
+        {/* //! REFRESH ON PASSING PROPS INTO COMP*/}
+
         {projects.map((project) => (
-        <div key={project._id}>
-          <h2 className="capitalize pl-1 pt-5">{project.name}</h2> 
+          <div key={project._id}>
           <Link href={`/projects/${project.slug}`}>
+          <Card />
+
             <div className="mb-5">
+          <h2 className="capitalize pl-1 pt-5">{project.name}</h2> 
+
           {project.image && ( 
             <Image
              src={project.image}
@@ -35,6 +43,9 @@ export default async function Home() {
            </Link>
           </div>
      ))}
+
+        {/* //todo: CREATE DYNAMIC CARD COMP ^ */}
+
         </>
       </section>
     </main>

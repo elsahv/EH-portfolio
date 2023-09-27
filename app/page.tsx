@@ -16,9 +16,10 @@ export default async function Home() {
       <section className="lg:h-screen md:w-[100%] bg-munsell md:absolute relative right-0 lg:w-3/5 w-full lg:overflow-y-scroll overflow-x-hidden p-5"id="right-side">
         <Websites />
         <>
-
         {/* //todo: CREATE DYNAMIC CARD COMP v*/}
-        {projects.map((project) => (
+        {/* //* MAKE VISIBLE WHEN READY!! */}
+
+        {/* {projects.map((project) => (
           <div key={project._id}>
           <Link href={`/projects/${project.slug}`}>
             <div className="w-1/2">
@@ -29,9 +30,8 @@ export default async function Home() {
           </div>
            </Link>
           </div>
-        ))}
+        ))} */}
         {/* //todo: CREATE DYNAMIC CARD COMP ^ */}
-        
         </>
       </section>
     </main>

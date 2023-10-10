@@ -5,7 +5,7 @@ import {menuItems} from '@/constants/MenuItems'
 
 const Header = () => {
   return (
-    <header className="w-full bg-aquamarine border-b-2 border-cerulean flex flex-row 2xl:justify-center justify-end fixed z-10" >
+    <header className="w-full bg-aquamarine border-b-2 border-cerulean flex flex-row 2xl:justify-center md:fixed justify-end relative z-10" >
       <nav className="2xl:py-5 md:pt-[25px] p-3">
         <div className="flex">
             <h1 className="pr-4 mr-3 font-bold text-3xl md:ml-3 ml-0 lg:pl-4 pl-0 text-onyx">

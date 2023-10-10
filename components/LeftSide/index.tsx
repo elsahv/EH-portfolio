@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image";
 import Self from "../../public/self.jpg";
 import JtLogo from "../../public/jt-logo.png";
-import Contact from "./Contact";
+import ContactForm from "./ContactForm";
 
 
 const LeftSide = () => {
@@ -37,7 +37,7 @@ const LeftSide = () => {
            and my portfolio.
            </p>
         </div>
-        <Contact />
+        <ContactForm />
       </div>
   )
 }

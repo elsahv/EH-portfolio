@@ -8,7 +8,10 @@ const Websites = () => {
       <div className="flex flex-col pb-5">
         <div className="lg:pt-[180px] pt-1 h-[100%] pb-[50px] pl-5 text-onyx">
           <h2 className='font-bold text-3xl text-left'>- Featured Websites -</h2>
+          {/* //todo GITHUB CTA v */}
           <span className="pl-5">(all sites are currently in progress, and improving everyday!)</span>
+          {/* //todo GITHUB CTA ^ */}
+        
         </div>
         <div className="md:px-3 px-1 flex flex-col gap-1">
           {websites.map((item, index) => (
@@ -25,7 +28,7 @@ const Websites = () => {
                 <Image
                   src={item.img}
                   alt=""
-                  className="drop-shadow-lg border border-black"
+                  className="drop-shadow-lg border-2 border-black"
                 />
                   <p className="text-parchment drop-shadow-lg p-2 flex justify-between pb-[50px]">{item.description}</p>
               </a>

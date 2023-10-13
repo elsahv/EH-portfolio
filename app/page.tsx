@@ -25,25 +25,28 @@ export default async function Home() {
           {/* <Link href={`/projects/${project.slug}`}> */}
         {/* //todo: MAKE SLUG VISIBLE WHEN CONTENT AVAILABLE ^*/}
             <div className="">
-          <Link href={project.url}>
             <div className="lg:px-5 px-1 hover:opacity-50">
             <div className="mt-5 p-2 flex md:1/2 w-full text-2xl md:text-left text-center drop-shadow-lg border-0">
              <h2 className="text-aquamarine">{project.name}</h2>
              <div className="pt-1 pl-2 text-aquamarine ">
+          <Link href={project.url}>
                     <MdFileOpen />
+                    </Link>
+
                   </div>
                   </div>
               <div>
+          <Link href={project.url}>
                 <Image className="drop-shadow-lg border-2 border-black"
                 src={project.image}
                 alt={project.name}
                 width={1050}
                 height={750}
                 />
+           </Link>
               </div>
               <p className="text-parchment drop-shadow-lg p-2 flex justify-between pb-[50px]">{project.description}</p>
           </div>
-           </Link>
           </div>
           </div>
         ))}

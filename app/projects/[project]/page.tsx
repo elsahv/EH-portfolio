@@ -12,16 +12,16 @@ export default async function Project({params}: Props) {
 
     return<div>
         <div className="flex justify-around px-[200px] bg-gray-300 drop-shadow-lg">
-        <div className="flex justify-center items-center flex-col p-5">
+        <div className="flex justify-center items-center flex-col p-5 bg-test">
             <h1 className="capitalize text-4xl">{project.name}</h1>
             <span className="pt-2">description goes here</span>
             </div>
-        <Image
+        <Image className="border border-black mt-[75px]"
         src={project.image}
         alt={project.name}
         width={900}
-        height={550}
-        className="border border-black"
+        height={650}
+        
         />
 
 

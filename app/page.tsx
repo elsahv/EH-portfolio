@@ -29,10 +29,7 @@ export default async function Home() {
             <div className="mt-5 p-2 flex md:1/2 w-full text-2xl md:text-left text-center drop-shadow-lg border-0">
              <h2 className="text-aquamarine">{project.name}</h2>
              <div className="pt-1 pl-2 text-aquamarine ">
-          <Link href={project.url}>
                     <MdFileOpen />
-                    </Link>
-
                   </div>
                   </div>
               <div>

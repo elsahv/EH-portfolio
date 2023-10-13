@@ -16,13 +16,19 @@ export default async function Home() {
 
       {/* //*RIGHTSIDE v */}
       <section className="lg:h-screen md:w-[100%] bg-munsell md:absolute relative right-0 lg:w-3/5 w-full lg:overflow-y-scroll overflow-x-hidden p-5"id="right-side">
-        <>
         {/* //todo: CREATE DYNAMIC CARD COMP v*/}
-        {/* //* MAKE VISIBLE WHEN READY!! */}
-
+        <div className="mt-[75px]">
+        <div className="pt-5 mt-5">
         {projects.map((project) => (
           <div key={project._id}>
-          <Link href={`/projects/${project.slug}`}>
+
+        {/* //todo: MAKE SLUG VISIBLE WHEN CONTENT AVAILABLE v*/}
+          {/* <Link href={`/projects/${project.slug}`}> */}
+
+        {/* //todo: MAKE SLUG VISIBLE WHEN CONTENT AVAILABLE ^*/}
+
+          <Link href={project.url}>
+            <div className="">
             <div className="lg:px-5 px-1 hover:opacity-50">
             <div className="p-2 flex md:1/2 w-full text-2xl md:text-left text-center drop-shadow-lg border-0">
              <h2 className="text-aquamarine">{project.name}</h2>
@@ -40,11 +46,14 @@ export default async function Home() {
               </div>
               <p className="text-parchment drop-shadow-lg p-2 flex justify-between pb-[50px]">{project.description}</p>
           </div>
+          </div>
            </Link>
           </div>
         ))}
+        </div>
+        </div>
+
         {/* //todo: CREATE DYNAMIC CARD COMP ^ */}
-        </>
       </section>
     </main>
   );

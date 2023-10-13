@@ -4,7 +4,7 @@ import clientConfig from "./config/client-config"
 
 export async function getProjects(): Promise<Project[]> {
     const client = createClient({
-        projectId:"mul81jdt",
+        projectId:"0j6tbmc1",
         dataset:"production",
         apiVersion:"2023-05-04",
     })

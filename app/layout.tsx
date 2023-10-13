@@ -1,13 +1,15 @@
+
+import Header from '@/components/Header'
 import './globals.css'
-import type { Metadata } from 'next'
+// import Footer from './components/Footer'
+
 import { Inter } from 'next/font/google'
-import Header from '../components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Elsa Hovey | Portfolio',
-  description: '',
+  description: 'Portfolio',
 }
 
 export default function RootLayout({
@@ -16,11 +18,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="text-gray-600">
+      <body className="">
         <Header />
-        {children}
+        <main>{children}</main>
+        {/* <Footer /> */}
         </body>
+        
     </html>
   )
-}
+} 

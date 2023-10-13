@@ -24,13 +24,12 @@ export default async function Home() {
 
         {/* //todo: MAKE SLUG VISIBLE WHEN CONTENT AVAILABLE v*/}
           {/* <Link href={`/projects/${project.slug}`}> */}
-
         {/* //todo: MAKE SLUG VISIBLE WHEN CONTENT AVAILABLE ^*/}
 
           <Link href={project.url}>
             <div className="">
             <div className="lg:px-5 px-1 hover:opacity-50">
-            <div className="p-2 flex md:1/2 w-full text-2xl md:text-left text-center drop-shadow-lg border-0">
+            <div className="mt-5 p-2 flex md:1/2 w-full text-2xl md:text-left text-center drop-shadow-lg border-0">
              <h2 className="text-aquamarine">{project.name}</h2>
              <div className="pt-1 pl-2 text-aquamarine ">
                     <MdFileOpen />

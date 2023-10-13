@@ -11,6 +11,7 @@
 # next.js
 /.next/
 /out/
+/LeftSide/ContactForm
 
 # production
 /build

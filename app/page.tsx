@@ -21,12 +21,7 @@ export default async function Home() {
         <div className="pt-5 mt-5">
         {projects.map((project) => (
           <div key={project._id}>
-
-        {/* //todo: MAKE SLUG VISIBLE WHEN CONTENT AVAILABLE v*/}
-          {/* <Link href={`/projects/${project.slug}`}> */}
-        {/* //todo: MAKE SLUG VISIBLE WHEN CONTENT AVAILABLE ^*/}
-
-          <Link href={project.url}>
+          <Link href={`/projects/${project.slug}`}>
             <div className="">
             <div className="lg:px-5 px-1 hover:opacity-50">
             <div className="mt-5 p-2 flex md:1/2 w-full text-2xl md:text-left text-center drop-shadow-lg border-0">

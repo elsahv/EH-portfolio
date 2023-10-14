@@ -1,5 +1,6 @@
 "use client";
 import {menuItems} from '@/constants/MenuItems'
+import Link from 'next/link';
  
 
 const Header = () => {
@@ -8,7 +9,9 @@ const Header = () => {
       <nav className="2xl:py-5 md:pt-[25px] p-3">
         <div className="flex">
             <h1 className="pr-4 mr-3 font-bold text-3xl md:ml-3 ml-0 lg:pl-4 pl-0 text-onyx">
+              <Link href="/">
               Elsa Hovey
+              </Link>
             </h1>
           <div className="flex items-center pr-5">
             {menuItems.map((item, index) => (

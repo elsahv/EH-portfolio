@@ -54,19 +54,15 @@ const ContactForm: React.FC = () => {
                elsahvy@gmail.com.
               </a>
  </div>
-
-
                 <div className=" text-sm sm:text-sm">Looking forward to hearing from you!</div>
               </div>
-
-
-              {/*  */}
               <div className="mx-auto w-full">
                 <div className="mx-auto  mb-4">
     <form className="" onSubmit={handleSubmit}>
+      {/* //todo:FIGURE OUT BEST TRANSITIONS, COLORS ON HOVER */}
       <div className="flex flex-col">
         <label className="mb-1 font-medium" htmlFor="name">Name:</label>
-        <input className="max-w-[600px] m-0 mb-4 block border border-solid border-black align-middle text-[#333333] focus:border-[#3898ec] text-sm px-3 rounded-md h-9 py-6"
+        <input className="hover:bg-parchment text-munsell max-w-[600px] m-0 mb-4 block border border-solid border-black align-middle text-[#333333] focus:border-[#3898ec] text-sm px-3 rounded-md h-9 py-6"
           type="text"
           id="name"
           value={name}
@@ -76,7 +72,7 @@ const ContactForm: React.FC = () => {
       </div>
       <div className="flex flex-col ">
         <label className="mb-1 font-medium" htmlFor="email">Email:</label>
-        <input className="max-w-[600px] m-0 mb-4 block border border-solid border-black align-middle text-[#333333] focus:border-[#3898ec] text-sm px-3 rounded-md h-9 py-6"
+        <input className="hover:bg-munsell text-parchment max-w-[600px] m-0 mb-4 block border border-solid border-black align-middle text-[#333333] focus:border-[#3898ec] text-sm px-3 rounded-md h-9 py-6"
           type="email"
           id="email"
           value={email}
@@ -86,7 +82,7 @@ const ContactForm: React.FC = () => {
       </div>
       <div className="flex flex-col">
         <label className="mb-1 font-medium" htmlFor="message">Message:</label>
-        <textarea className="max-w-[600px] border border-black"
+        <textarea className="text-black hover:bg-aquamarine max-w-[600px] border border-black"
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -96,8 +92,8 @@ const ContactForm: React.FC = () => {
       <div className="my-3">
       <input type="submit" value="Send" className="hover:bg-test2 hover:text-teal rounded mt-4 max-w-sm cursor-pointer items-center bg-black px-4 py-2 text-center font-semibold text-white"/>
     </div>
+      {/* //todo:FIGURE OUT BEST TRANSITIONS, COLORS ON HOVER */}
     </form>
-
     </div>
       </div>
     </div>

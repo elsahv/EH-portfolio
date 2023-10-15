@@ -38,7 +38,7 @@ export default async function Home() {
                 height={750}
                 />
               </div>
-              <p className="text-parchment drop-shadow-lg p-2 flex justify-between pb-[50px]">{project.description}</p>
+              <p className="text-parchment drop-shadow-lg p-2 flex justify-between pb-[100px]">{project.description}</p>
           </div>
           </div>
            </Link>

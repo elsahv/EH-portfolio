@@ -38,8 +38,13 @@ const project = {
       type: "url"
     },
     {
-      name: "content",
-      title: "Content",
+      name: "githublink",
+      title: "Github Link",
+      type: "url"
+    },
+    {
+      name: "body",
+      title: "Body",
       type: "array",
       of: [{ type: "block" }]
     }

@@ -72,7 +72,7 @@ const ContactForm: React.FC = () => {
       </div>
       <div className="flex flex-col ">
         <label className="mb-1 font-medium" htmlFor="email">Email:</label>
-        <input className="hover:bg-munsell text-parchment max-w-[600px] m-0 mb-4 block border border-solid border-black align-middle text-[#333333] focus:border-[#3898ec] text-sm px-3 rounded-md h-9 py-6"
+        <input className="hover:bg-munsell text-aquamarine max-w-[600px] m-0 mb-4 block border border-solid border-black align-middle focus:border-[#3898ec] text-sm px-3 rounded-md h-9 py-6"
           type="email"
           id="email"
           value={email}

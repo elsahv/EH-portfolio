@@ -6,10 +6,6 @@ import {
   } from "react-icons/ai";
   
   export const menuItems = [
-    // {
-    //   menuItem: "about",
-    //   url: "https://linkedin.com",
-    // },
     {
       menuItem: <AiFillGithub />,
       url: "https://github.com",
@@ -22,4 +18,12 @@ import {
       menuItem: <AiFillMail />,
       url: "mailto: elsahvy@gmail.com",
     },
+    // {
+    //   menuItem: 'Featured Websites',
+    //  url: "https://elsahovey.com/",
+    // },
+    // {
+    //   menuItem: 'Mindmaps',
+    //   url: "https://elsahovey.com/mindmaps/",
+    // },
   ];

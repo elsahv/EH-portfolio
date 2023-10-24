@@ -15,7 +15,7 @@ const Card = ( {  name, image, description, url  }: Props) => {
   return (
      <div className="">
     <div className="lg:px-5 px-1 hover:opacity-50">
-    <div className="mt-5 p-2 flex md:1/2 w-full text-2xl md:text-left text-center drop-shadow-lg border-0">
+    <div className="bg-test1mt-5 p-2 flex md:1/2 w-full text-2xl md:text-left text-center drop-shadow-lg border-0">
       <h2 className="text-aquamarine">{name}</h2>
       <div className="pt-1 pl-2 text-aquamarine ">
       <Link href={url}>

@@ -2,6 +2,7 @@ import Card from "@/components/Card";
 import LeftSide from "../components/LeftSide";
 import Websites from "../components/Websites";
 import {getProjects} from "@/sanity/sanity-utils"
+import Link from "next/link";
 
 
 export default async function Home() {
@@ -20,18 +21,26 @@ export default async function Home() {
           <Websites />
           </div>
           </div>
+      {/* //*RIGHTSIDE ^ */}
 
-        <div className="pt-5 mt-5">
-        {projects.map((project:any) => (
+      {/* //todo MINDMAPS v */}
+        {/* <div className="pt-5 mt-5">
+        <h2 className="pl-5 pb-3 text-4xl underline">Mindmaps</h2>
+        <div className="grid grid-cols-2">
+        {projects.map((project:any) => (  
           <Card
           key={project.name}
           name={project.name}
           image={project.image}
           description={project.description}
-          url={project.url}
+          // url={project.url}
+          slug={project.slug}
           /> 
           ))}
-        </div>
+          </div>
+        </div> */}
+      {/* //todo MINDMAPS ^ */}
+
         </div>
         <>
         </>

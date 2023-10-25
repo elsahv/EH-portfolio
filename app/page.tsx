@@ -3,11 +3,12 @@ import LeftSide from "../components/LeftSide";
 import Websites from "../components/Websites";
 import {getProjects} from "@/sanity/sanity-utils"
 import Link from "next/link";
+import Mindmap from "@/components/Mindmap";
 
 
 export default async function Home() {
 
-  const projects = await getProjects()
+  // const projects = await getProjects()
 
   return (
     <main>
@@ -18,11 +19,12 @@ export default async function Home() {
           <div className="pt-[150px]">
             <h2 className="pl-1 pb-3 text-4xl underline">Featured Websites</h2>
             <div className="">
-          <Websites />
+        <Mindmap />
+
           </div>
           </div>
       {/* //*RIGHTSIDE ^ */}
-
+          <Websites />
       {/* //todo MINDMAPS v */}
         {/* <div className="pt-5 mt-5">
         <h2 className="pl-5 pb-3 text-4xl underline">Mindmaps</h2>
@@ -33,8 +35,7 @@ export default async function Home() {
           name={project.name}
           image={project.image}
           description={project.description}
-          // url={project.url}
-          slug={project.slug}
+          slug={`/projects/${project.slug}`}
           /> 
           ))}
           </div>

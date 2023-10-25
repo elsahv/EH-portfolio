@@ -40,7 +40,7 @@ const websites = [
 //todo: MOVE TO CONSTANTS ^
 
 
-const Mindmaps = () => {
+const Websites = () => {
   return (
     <div>
      {websites.map((item, index) => (
@@ -68,4 +68,4 @@ const Mindmaps = () => {
   )
 }
 
-export default Mindmaps
+export default Websites

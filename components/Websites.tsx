@@ -42,7 +42,10 @@ const websites = [
 
 const Websites = () => {
   return (
-    <div>
+    <div className="mt-[105px]">
+    <div className="p-5">
+           <h2 className="pl-1 pb-3 text-4xl underline">Blog</h2>
+           <div className="grid grid-cols-2 gap-x-8 gap-y-6">
      {websites.map((item, index) => (
       <div key={index}>
        <div className="mt-5 p-2 flex md:1/2 w-full text-2xl md:text-left text-center drop-shadow-lg border-0">
@@ -57,13 +60,15 @@ const Websites = () => {
               <Image className="drop-shadow-lg border-2 border-black"
                     src={item.image}
                       alt={item.title}
-                        width={1050}
-                        height={750}
+                        width={950}
+                        height={450}
                           />
                  </Link>
        <p className="text-parchment drop-shadow-lg p-2 flex justify-between pb-[100px]">{item.desc}</p>
       </div>
      ))}
+     </div>
+    </div>
     </div>
   )
 }

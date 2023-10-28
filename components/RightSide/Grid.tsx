@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import Img1 from '../public/screenshots/lc.png'
-import Img2 from '../public/screenshots/roof.png'
-import Img3 from '../public/screenshots/rq.png'
-import Img4 from '../public/screenshots/wtbh.png'
+import Img1 from '../../public/screenshots/lc.png'
+import Img2 from '../../public/screenshots/roof.png'
+import Img3 from '../../public/screenshots/rq.png'
+import Img4 from '../../public/screenshots/wtbh.png'
 import Link from 'next/link'
 import { MdFileOpen } from "react-icons/md";
 
@@ -33,7 +33,9 @@ const posts = [
 
 const Grid = () => {
   return (
-    <div className="m-5 pl-3 pr-[10px]">
+    <div className="mt-[75px]">
+
+    <div className="">
       <div className="mb-5 pt-2">
       {/* <ul className="text-aquamarine flex space-x-4">
         <li className="bg-onyx border border-black px-3 py-1 rounded">All Featured Sites</li>
@@ -56,19 +58,20 @@ const Grid = () => {
         <div className="w-[530px]" key={index}>
            <Link className="hover:text-aquamarine hover:opacity-80" href={item.url}>
          <div className="flex items-center ">
-            <h2 className="text-lg pt-5">{item.title}</h2>
+            <h3 className="text-lg pt-5">{item.title}</h3>
             </div>
               <Image className="h-[300px] rounded drop-shadow-lg border border-black"
                     src={item.image}
-                      alt={item.title}
-                        // width={1050}
-                        // height={850}
-                          />
+                    alt={item.title}
+                    // width={1050}
+                    // height={850}
+                    />
                  </Link>
         </div>
       ))}
     </div>
     </div>
+      </div>
   )
 }
 

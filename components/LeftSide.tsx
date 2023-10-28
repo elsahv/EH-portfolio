@@ -2,8 +2,7 @@ import Link from "next/link"
 import Image from "next/image";
 import Self from "../../public/self.jpg";
 import JtLogo from "../../public/jt-logo.png";
-import ContactForm from "./ContactForm";
-import Footer from "../Footer";
+import Footer from "./Footer";
 
 
 const LeftSide = () => {
@@ -11,7 +10,7 @@ const LeftSide = () => {
     <div className="bg-gray-100 border-black border-r-2 lg:h-screen h-[100%] md:overflow-y-scroll overflow-x-hidden 2xl:w-[770px] lg:w-[410px] lg:fixed z-50">
         <div className="text-lg flex flex-col gap-5">
           <div className="grid 2xl:grid-cols-2 grid-cols-1">  
-      <Image className="border border-black lg:w-full w-1/2"
+      <Image  className="border border-black lg:w-full w-1/2"
        src={Self}
        alt=""
       /> 
@@ -31,14 +30,15 @@ const LeftSide = () => {
                 in working with other developers to gain team building
                 experience, and build up a network to bounce ideas off of.
               </p>
-        <p className="">Listed are some of my featured websites, all builds are currently in progress... You can view my coding progress through
-           <Link href="https://github.com/elsahv" className="ml-1 hover:text-onyx underline"> 
-           github.
-           </Link>
-           and my portfolio.
-           </p>
+        <p className="">Has my portfolio piqued your interest? If so, you can contact me at
+             <Link className="underline px-2"
+                href="mailto:elsahvy@gmail.com"
+              >
+               elsahvy@gmail.com.
+              </Link>
+              Looking forward to hearing from you!
+               </p>
         </div>
-              <ContactForm />
               <Footer />
       </div>
   )

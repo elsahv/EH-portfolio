@@ -8,24 +8,25 @@ import { MdFileOpen } from "react-icons/md";
 
 const posts = [
   {
-    title: 'Laughing Coyote',
+    // title: 'Laughing Coyote',
+    title: 'brochure websites for small businesses',
     image: Img1,
-    url: 'http://google.com'
+    url: 'http://laughingcoyote.dev'
   },
   {
     title: 'Hovey Roofing',
     image: Img2,
-    url: 'http://google.com'
+    url: 'http://hoveyroofing.com'
   },
   {
-    title: 'The Running Quail',
+    title: 'The Running Quail- a future social media app for high desert locals and enthusiasts',
       image: Img3,
-      url: 'http://google.com'
+      url: 'http://therunningquail.com'
   },
   {
-    title: 'Writing to Better Health',
+    title: 'and Writing to Better Health Future Blog',
     image: Img4,
-    url: 'http://google.com'
+    url: 'http://writingtobetterhealth.com'
   },
 ]
 
@@ -51,16 +52,18 @@ const Grid = () => {
         <li className="bg-test1 border border-black px-3 py-1 rounded">Newsletter</li>
       </ul> */}
         </div>
-      <h2 className="pt-5 text-4xl underline ml-3">Featured Projects</h2>
-      <p className="mb-5">Listed below are some featured website projects. Click on each image to view website</p>
-    <div className="grid grid-cols-2 gap-y-8 gap-x-10">
+      {/* <h2 className="pt-5 text-4xl underline ml-3">Web Development and Designs</h2> */}
+      <h2 className="pt-5 text-4xl underline ml-3">Development and Designs</h2>
+
+      <p className="mb-5">Listed below are some featured website projects. I build...</p>
+    <div className="grid grid-cols-2 gap-x-2 gap-y-4 odd:pt-[150px]">
       {posts.map((item, index) => (
         <div className="w-[530px]" key={index}>
-           <Link className="hover:text-aquamarine hover:opacity-80" href={item.url}>
+           <Link className="hover:text-aquamarine hover:opacity-80 hover:ease-in duration-300" href={item.url}>
          <div className="flex items-center ">
-            <h3 className="text-lg pt-5">{item.title}</h3>
+            <h3 className="text-lg pt-5 pl-5">...{item.title}</h3>
             </div>
-              <Image className="h-[300px] rounded drop-shadow-lg border border-black"
+              <Image className="h-[300px] mb-[50px] rounded drop-shadow-3xl border border-onyx"
                     src={item.image}
                     alt={item.title}
                     // width={1050}

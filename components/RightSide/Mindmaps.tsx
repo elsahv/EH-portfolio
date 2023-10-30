@@ -39,7 +39,7 @@ const Mindmaps = () => {
       {posts.map((item, index) => (
         <div className="p-5 flex flex-end" key={index}>
            <Link className="" href={item.url}>
-            {/* <h3 className="font-bold text-lg hover:underline">{item.title}</h3> */}
+            {/* <h3 className="font-bold text-lg hover:underline">{item.title}</h3> */} 
 
                     <div className="w-full">
                      <Image src={item.image} alt="" />

@@ -1,32 +1,30 @@
 import Image from 'next/image'
 import Img1 from '../../public/screenshots/lc.png'
-import Img2 from '../../public/screenshots/roof.png'
-import Img3 from '../../public/screenshots/rq.png'
-import Img4 from '../../public/screenshots/wtbh.png'
+import Img2 from '../../public/screenshots/rq.png'
+import Img3 from '../../public/screenshots/wtbh.png'
 import Link from 'next/link'
 import { MdFileOpen } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 
 const posts = [
   {
     // title: 'Laughing Coyote',
-    title: 'brochure websites for small businesses',
+    title: 'small businesses',
     image: Img1,
-    url: 'http://laughingcoyote.dev'
+    url: 'http://laughingcoyote.dev',
+    p: 'Laughing coyote- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure porro, dolor voluptatem blanditiis expedita tempora ab',
   },
   {
-    title: 'Hovey Roofing',
-    image: Img2,
-    url: 'http://hoveyroofing.com'
+    title: 'high desert locals and enthusiasts',
+      image: Img2,
+      url: 'http://therunningquail.com',
+      p: 'The Running Quail- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure porro, dolor voluptatem blanditiis expedita tempora ab',
   },
   {
-    title: 'The Running Quail- a future social media app for high desert locals and enthusiasts',
-      image: Img3,
-      url: 'http://therunningquail.com'
-  },
-  {
-    title: 'and Writing to Better Health Future Blog',
-    image: Img4,
-    url: 'http://writingtobetterhealth.com'
+    title: 'and dietitians/ nutritionists',
+    image: Img3,
+    url: 'http://writingtobetterhealth.com',
+    p: 'Writing to Better Health- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure porro, dolor voluptatem blanditiis expedita tempora ab',
   },
 ]
 
@@ -42,7 +40,6 @@ const Grid = () => {
         <li className="bg-onyx border border-black px-3 py-1 rounded">All Featured Sites</li>
         <li className="bg-onyx border border-black px-3 py-1 rounded">Writing to Better Health</li>
         <li className="bg-onyx border border-black px-3 py-1 rounded">Laughing Coyote Dev</li>
-        <li className="bg-onyx border border-black px-3 py-1 rounded">HoveyRoofing</li>
         <li className="bg-onyx border border-black px-3 py-1 rounded">The Running Quail</li>
       </ul> */}
       {/* <ul className="flex space-x-4">
@@ -54,25 +51,44 @@ const Grid = () => {
         </div>
       {/* <h2 className="pt-5 text-4xl underline ml-3">Web Development and Designs</h2> */}
       <h2 className="pt-5 text-4xl underline ml-3">Development and Designs</h2>
-
-      <p className="mb-5">Listed below are some featured website projects. I build...</p>
-    <div className="grid grid-cols-2 gap-x-2 gap-y-4 odd:pt-[150px]">
+        <div className="">
+      <p className="text-lg">Listed below are some featured websites. These projects are build to assist:</p>
+    
+         {/* <ul className="pl-5">
+          <li>- small businesses</li>
+          <li>- high desert residents</li>
+          <li>- dietitians</li>
+         </ul> */}
+         </div>
+      {/* //*GRID STARTS HERE */}
+    <div className="grid grid-cols-1 gap-x-4 gap-y-12">
       {posts.map((item, index) => (
-        <div className="w-[530px]" key={index}>
-           <Link className="hover:text-aquamarine hover:opacity-80 hover:ease-in duration-300" href={item.url}>
-         <div className="flex items-center ">
-            <h3 className="text-lg pt-5 pl-5">...{item.title}</h3>
-            </div>
-              <Image className="h-[300px] mb-[50px] rounded drop-shadow-3xl border border-onyx"
+        <div className="rounded dropshadow-lg" key={index}>
+           <Link className="hover:opacity-80 hover:ease-in duration-300" href={item.url}>
+            <div className="2xl:flex 2xl:flex-row flex-col bg-test2 border border-black rounded-lg">
+              <Image className="2xl:w-[550px] w-full rounded-tl-lg rounded-bl-lg drop-shadow-3xl border-r border-onyx"
                     src={item.image}
                     alt={item.title}
-                    // width={1050}
-                    // height={850}
                     />
+                    <div className="">
+            <h3 className="text-lg font-bold pt-5 pl-5">...{item.title}</h3>
+            <p className="">{item.p}</p>
+            <div className="pt-5 pl-5 2xl:pb-0 pb-4 flex items-center h-1/2 md:text-3xl text-2xl">
+              {/* //todo IMP LINKS */}
+              <div className="px-1">
+                <FaLinkedin />
+                </div>
+              <div className="px-1">
+                <MdFileOpen />
+                </div>
+            </div>
+                    </div>
+                    </div>
                  </Link>
         </div>
       ))}
     </div>
+      {/* //*GRID ENDS HERE */}
     </div>
       </div>
   )

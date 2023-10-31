@@ -11,8 +11,15 @@
 
 
 p {
-    padding: 20px;
+    padding: 20px;  
 }
+
+@media only screen and (max-width: 600px) {
+  p {
+    padding: 7px;  
+  }
+}
+
 
 #post-p{
   padding: 0px;

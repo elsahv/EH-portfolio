@@ -1,5 +1,7 @@
 import Grid from './Grid'
 import Mindmaps from './Mindmaps'
+import Footer from "../Footer";
+
 
 const RightSide = () => {
   return (
@@ -7,6 +9,7 @@ const RightSide = () => {
    <div className="m-5 pl-3 py-[20px] pr-[10px]">
     <Grid />
     {/* <Mindmaps /> */}
+    <Footer />
     </div>
   </section>
   )

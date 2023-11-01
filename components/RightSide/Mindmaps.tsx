@@ -12,21 +12,21 @@ const posts = [
     image: Img1,
     url: 'http://google.com'
   },
-  {
-    title: '6/30/23',
-    image: Img2,
-    url: 'http://google.com'
-  },
-  {
-    title: '7/6/23',
-      image: Img3,
-      url: 'http://google.com'
-  },
-  {
-    title: '8/3/23',
-    image: Img4,
-    url: 'http://google.com'
-  },
+  // {
+  //   title: '6/30/23',
+  //   image: Img2,
+  //   url: 'http://google.com'
+  // },
+  // {
+  //   title: '7/6/23',
+  //     image: Img3,
+  //     url: 'http://google.com'
+  // },
+  // {
+  //   title: '8/3/23',
+  //   image: Img4,
+  //   url: 'http://google.com'
+  // },
 ]
 
 

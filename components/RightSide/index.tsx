@@ -1,5 +1,5 @@
 import Grid from './Grid'
-import Mindmaps from './Mindmaps'
+// import Mindmaps from './Mindmaps'
 import Footer from "../Footer";
 
 

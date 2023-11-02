@@ -33,8 +33,8 @@ const posts = [
 const Mindmaps = () => {
   return (
     <div className="mt-[105px]">
-      <h2 className="pt-5 text-4xl underline ml-3">On finding creativity</h2>
-      <p id="" className="">a newsletter documenting progress. Click on each image to view post</p>
+      <h2 className="pt-5 text-4xl underline ml-3">Creative Projects</h2>
+      <p id="" className="">an upcoming newsletter for documenting progress. Click on each image to view post</p>
     <div className="grid grid-cols-2">
       {posts.map((item, index) => (
         <div className="p-5 flex flex-end" key={index}>

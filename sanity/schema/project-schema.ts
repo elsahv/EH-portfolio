@@ -19,13 +19,13 @@ const project = {
       title: "Image",
       type: "image",
       options: { hotspot: true },
-      // fields: [
-      //   {
-      //     name: "alt",
-      //     title: "Alt",
-      //     type: "string"
-      //   }
-      // ]
+      fields: [
+        {
+          name: "alt",
+          title: "Alt",
+          type: "string"
+        }
+      ]
     },
     {
       name: "description",
@@ -33,15 +33,21 @@ const project = {
       type: "string",
     },
     {
-      name: "url",
-      title: "URL",
-      type: "url"
+      name: 'images',
+      title: 'Images',
+      type: 'array',
+      of: [{ type: 'images' }],
     },
-    {
-      name: "githublink",
-      title: "Github Link",
-      type: "url"
-    },
+    // {
+    //   name: "url",
+    //   title: "URL",
+    //   type: "url"
+    // },
+    // {
+    //   name: "githublink",
+    //   title: "Github Link",
+    //   type: "url"
+    // },
     {
       name: "body",
       title: "Body",

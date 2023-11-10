@@ -1,11 +1,12 @@
 import Image from 'next/image'
-import Img1 from '../../public/screenshots/lc.png'
-import Img2 from '../../public/screenshots/rq.png'
-import Img3 from '../../public/screenshots/wtbh.png'
-import Img4 from '../../public/screenshots/jungle.png'
+import Img1 from '../public/screenshots/lc.png'
+import Img2 from '../public/screenshots/rq.png'
+import Img3 from '../public/screenshots/wtbh.png'
+import Img4 from '../public/screenshots/jungle.png'
 import Link from 'next/link'
 import { MdFileOpen } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { MdConstruction } from "react-icons/md";
 
 const posts = [
   {
@@ -39,7 +40,7 @@ const posts = [
   },
 ]
 
-//todo: ADD CREATIVE PROJECTS FILTER BTNS
+//todo later: ADD CREATIVE PROJECTS FILTER BTNS
 
 const Grid = () => {
   return (
@@ -61,17 +62,38 @@ const Grid = () => {
       </ul> */}
         </div>
       {/* <h2 className="pt-5 text-4xl underline ml-3">Web Development and Designs</h2> */}
-      <h2 className="pt-5 text-4xl underline ml-3">Development and Designs</h2>
-      <p className="text-2xl">Listed below are some of my featured websites projects, all currently a work in progress. These websites are being built to assist...</p>
+      
+      <div className="flex items-center text-4xl">
+      <h2 className="pt-5 underline ml-3">Development and Designs</h2>
+
+       <div className="pt-[29px] ml-3 text-onyx">
+        <MdConstruction />
+       </div>
+      
+
+      </div>
+
+
+
+
+
+
+
+
+      <p className="text-2xl">Listed below are some of my featured websites projects, all currently a
+      
+      <span className="underline px-1">
+       work in progress.
+       </span>
+       
+        These websites are being built to assist...</p>
       {/* //*GRID STARTS HERE */}
-    <div className="grid grid-cols-1 gap-x-4 gap-y-12 mt-5">
+    <div id="website-grid" className="grid grid-cols-1 gap-x-4 gap-y-16 mt-5">
       {posts.map((item, index) => (
         <div className="rounded dropshadow-lg" key={index}>
-
-            {/* SQ STARTS HERE */}
-            <div className="2xl:grid 2xl:grid-cols-2 grid-cols-1 bg-test2 border-2 border-cerulean rounded-lg ">
+            <div id="sq" className="2xl:grid 2xl:grid-cols-2 grid-cols-1 bg-test2 border-2 border-cerulean rounded-lg ">
            <Link className="hover:opacity-80 hover:ease-in duration-300" href={item.url}>
-              <Image className="2xl:w-[850px] w-full rounded-tl-lg rounded-bl-lg drop-shadow-3xl 2xl:border-r 2xl:border-b-0 border-b border-cerulean"
+              <Image className="2xl:w-[850px] w-full rounded-tl-lg rounded-bl-lg drop-shadow-3xl 2xl:border-r 2xl:border-b-0 border-b border-rosyBrown"
                     src={item.image}
                     alt={item.title}
                     />

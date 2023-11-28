@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Test = () => {
+
+interface CardProps {
+  myProp: string;
+}
+const Test:React.FC<CardProps> = ({myProp}) => {
   return (
-    <div>Test</div>
+    <div>
+      <p>{myProp}</p>
+    </div>
   )
 }
 

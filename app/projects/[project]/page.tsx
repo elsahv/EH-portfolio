@@ -17,7 +17,7 @@ export default async function Project({ params }: Props) {
           <h1 className="capitalize text-4xl">{project.name}</h1>
           <span className="pt-2">description goes here</span>
         </div>
-        {/* //todo: CHANGE SLUG IMG TO MATCH FRONT  v*/}
+        {/* //todo sooner: CHANGE SLUG IMG TO MATCH FRONT  v*/}
         <Image
           src={project.image}
           alt={project.name}
@@ -25,7 +25,7 @@ export default async function Project({ params }: Props) {
           height={450}
           className="border border-black"
         />
-        {/* //todo: CHANGE SLUG IMG TO MATCH FRONT  ^*/}
+        {/* //todo sooner: CHANGE SLUG IMG TO MATCH FRONT  ^*/}
       </div>
       <div className="bg-test1 flex justify-center">
         <div className="">

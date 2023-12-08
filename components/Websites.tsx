@@ -7,6 +7,7 @@ import Link from "next/link";
 import { MdFileOpen } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { MdConstruction } from "react-icons/md";
+import Card from "./Card";
 
 const posts = [
   {
@@ -42,7 +43,7 @@ const posts = [
 
 //todo later: ADD CREATIVE PROJECTS FILTER BTNS
 
-const Grid = () => {
+const Websites = () => {
   return (
     <div className="mt-[75px]">
       <div className="">
@@ -82,6 +83,8 @@ const Grid = () => {
         >
           {posts.map((item, index) => (
             <div className="rounded dropshadow-lg" key={index}>
+              {/* CARD STARTS HERE */}
+              <Card />
               <div
                 id="sq"
                 className="2xl:grid 2xl:grid-cols-2 grid-cols-1 bg-test2 border-2 border-cerulean rounded-lg "
@@ -126,7 +129,7 @@ const Grid = () => {
                   </>
                 </div>
               </div>
-              {/* SQ ENDS HERE */}
+              {/* CARD ENDS HERE */}
             </div>
           ))}
         </div>
@@ -136,4 +139,4 @@ const Grid = () => {
   );
 };
 
-export default Grid;
+export default Websites;

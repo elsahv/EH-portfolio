@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Img1 from "../public/screenshots/lc.png";
-import Img2 from "../public/screenshots/rq.png";
-import Img3 from "../public/screenshots/wtbh.png";
-import Img4 from "../public/screenshots/jungle.png";
+import Img1 from "../../public/screenshots/lc.png";
+import Img2 from "../../public/screenshots/rq.png";
+import Img3 from "../../public/screenshots/wtbh.png";
+import Img4 from "../../public/screenshots/jungle.png";
 import Link from "next/link";
 import { MdFileOpen } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { MdConstruction } from "react-icons/md";
-import Card from "./Card";
+import Card from "../Card";
 
 const posts = [
   {
@@ -83,7 +83,7 @@ const Websites = () => {
         >
           {posts.map((item, index) => (
             <div className="rounded dropshadow-lg" key={index}>
-              {/* CARD STARTS HERE */}
+              {/* //!CARD STARTS HERE v */}
               <Card />
               <div
                 id="sq"
@@ -129,7 +129,7 @@ const Websites = () => {
                   </>
                 </div>
               </div>
-              {/* CARD ENDS HERE */}
+              {/*//! CARD ENDS HERE ^ */}
             </div>
           ))}
         </div>

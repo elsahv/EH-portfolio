@@ -3,8 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import Websites from "@/components/Websites";
 import { getProjects } from "@/sanity/sanity-utils";
+import Websites from "./Websites";
 
 export default async function RightSide() {
   const projects = await getProjects();

@@ -11,7 +11,7 @@ export default async function RightSide() {
 
   return (
     <section
-      className="lg:h-screen md:w-[100%] bg-munsell md:absolute relative right-0 lg:w-3/5 w-full lg:overflow-y-scroll overflow-x-hidden"
+      className="lg:h-screen lg:w-[100%] bg-munsell md:absolute relative right-0 w-full lg:overflow-y-scroll overflow-x-hidden"
       id="right-side-panel"
     >
       <div className="m-5 pl-3 py-[20px] pr-[10px]">

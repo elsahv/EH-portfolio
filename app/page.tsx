@@ -16,9 +16,10 @@ export default async function Home() {
     <>
       <LeftSide />
 
-      {/* //todo 12/21: FIGURE OUT COMPONENTS FOR RIGHT SIDE v  */}
-      <section
-        className="lg:h-screen md:w-[100%] bg-munsell md:absolute relative right-0 lg:w-3/5 w-full lg:overflow-y-scroll overflow-x-hidden"
+      {/* //! RIGHTSIDE TOP v */}
+      {/* //todo sooner, last viewed- 12/21/23: FIGURE OUT COMPONENTS FOR RIGHT SIDE v  */}
+      <div
+        className="wrapper lg:h-screen md:w-[100%] bg-munsell md:absolute relative right-0 lg:w-3/5 w-full lg:overflow-y-scroll overflow-x-hidden"
         id="right-side-panel"
       >
         <div className="m-5 pl-3 py-[20px] pr-[10px]">
@@ -32,7 +33,7 @@ export default async function Home() {
                   <h2 className="capitalize pl-1 pt-5">{project.name}</h2>
                   <Link href={`/projects/${project.slug}`}>
                     <div className="bg-test1 mb-5 border border-black">
-                      {/*//todo later: <-- IMP BG COLOR TAG CHANGE, APPLIES TO PARAGRAPH COLOR BACKGROUND   (EX: WTBH IS AQUAMARINE, LC IS ORANGE*/}
+                      {/*//* todo later: <-- IMP BG COLOR TAG CHANGE, APPLIES TO PARAGRAPH COLOR BACKGROUND   (EX: WTBH IS AQUAMARINE, LC IS ORANGE*/}
                       {project.image && (
                         <Image
                           src={project.image}
@@ -57,8 +58,9 @@ export default async function Home() {
           </div>
           <Footer />
         </div>
-      </section>
-      {/* //todo 12/21: FIGURE OUT COMPONENTS FOR RIGHT SIDE ^  */}
+      </div>
+      {/* //todo sooner, last viewed- 12/20/23: FIGURE OUT COMPONENTS FOR RIGHT SIDE ^  */}
+      {/* //! RIGHTSIDE BOTTOM v */}
     </>
   );
 }

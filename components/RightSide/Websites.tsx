@@ -45,8 +45,7 @@ const posts = [
 
 const Websites = () => {
   return (
-    // <div className="mt-[75px]">
-    <div className="2xl:mt-[75px] mt-3">
+    <div className="2xl:mt-[75px] md:mt-[50px] mt-1">
       <div className="mb-5 pt-2">
         {/* <ul className="text-aquamarine flex space-x-4">
         <li className="bg-onyx border border-black px-3 py-1 rounded">All Featured Sites</li>
@@ -131,7 +130,6 @@ const Websites = () => {
         ))}
       </div>
       {/* //*GRID ENDS HERE */}
-      {/* </div> */}
     </div>
   );
 };
